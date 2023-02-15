@@ -2,17 +2,15 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: 'Oswald', sans-serif; */
+    font-size: 18px;
 }
-body{
+html,body{
     font-family: 'Oswald', sans-serif;
 }
 .container{
     width: 90%;
     max-width: 1024px; 
     margin: 0 auto;
-}
-body{
-    font-size: 18px;
 }
 /* HEADER */
 header{
@@ -32,8 +30,13 @@ header{
 .header__container a{
     text-decoration: none;
     color:white;
-    margin-left: 20px;
+    margin: 0 26px;
     font-size: 0.94rem;
+    transition: 0.5s;
+}
+
+.header__container a:hover{
+    color: #e62b4a;
 }
 .header__container a.active{
     color: #e62b4a;
@@ -43,7 +46,6 @@ header{
     font-size: 1.78rem;
 }
 .header__container .logo span{
-    margin-left: px;
     font-weight:700;
 }
 
@@ -67,7 +69,8 @@ header{
 .banner__container h2{
     font-size: 4rem;
     font-weight: 700;
-    margin: 20px 0;
+    margin-bottom: 20px;
+    line-height: 90px;
 }
 .banner__container p{
     font-size: 1.39rem;
@@ -89,7 +92,7 @@ header{
 }
 
 .banner__container i{
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation-iteration-count: infinite;
     animation-duration: 1s;
     animation-name: animate__arrow1;
@@ -97,7 +100,7 @@ header{
 
 /* CAROUSEL */
 .carousel{
-    padding: 80px 0;
+    padding: 90px 0;
     background-color: black;
     color: white;
 }
@@ -125,6 +128,7 @@ header{
 }
 .carousel__item{
     height: 230px;
+    width: 214px;
     padding: 0 10px;
 }
 
@@ -172,14 +176,14 @@ header{
 
 .slick-dots li button:before{
     color: white;
-    font-size: 15px;
-    opacity: 0.5;
+    font-size: 14px;
+    opacity: 0.25;
     
 }
 
 /* BLOGS */
 .blogs{
-    padding: 80px 0 80px;
+    padding: 100px 0 80px;
     background-color: #F3F3F3;
 }
 
@@ -368,7 +372,7 @@ text-align: center;
 .contant__title p{
     font-size: 0.89rem;
     color: #888;
-    font-weight: 700;
+    font-weight: 400;
     margin-top: 30px;
    
 }
@@ -424,7 +428,12 @@ footer{
     
 }
 .footer__text{
-    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__text p{
+    font-size: 0.78rem; 
 }
 .footer__icon {
     font-size: 0.89rem;
@@ -448,12 +457,12 @@ footer{
 }
 @keyframes animate__arrow1{
     from{
-        transform: translateY(0);
+        transform: translateY(30px);
         opacity: 0.75;
         
     }
     to{
-        transform: translateY(100px);
+        transform: translateY(70px);
         opacity: 0;
     }
 }
