@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Meipaly</title>
+    <!-- back-to-top css -->
+    <link rel="stylesheet" href="./back-to-top-master/assets/css/style.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -29,6 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
+
     <!-- css -->
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -36,8 +39,7 @@
     <header>
       <div class="container header__container">
         <div class="logo">
-          <a href="#"><i class="fab fa-atlassian"></i>
-          <span>meipaly</span></a>
+          <a href="#"><i class="fab fa-atlassian"></i> <span>meipaly</span></a>
         </div>
         <nav>
           <a class="active" href="#">HOME</a>
@@ -72,8 +74,8 @@
           </h2>
           <p>
             We are committed to providing our customers with exceptional service
-            while <br />
-            offering our employees the best training.
+            while offering <br />
+            our employees the best training.
           </p>
         </div>
         <div class="carousel__list">
@@ -361,7 +363,11 @@
             employees the best training.
           </p>
         </div>
-        <video controls src="./image-video/video.mp4"></video>
+        <video
+          poster="./image-video/home_slider.jpg"
+          controls
+          src="./image-video/video.mp4"
+        ></video>
       </div>
     </section>
     <section class="contact">
@@ -389,15 +395,21 @@
           </div>
 
           <div class="contact__form">
-             <form></form>
-            <div class="fom__gruop">
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="fom__gruop">
-              <input type="email" placeholder="Email Address" />
-            </div>
+            <form>
               <div class="fom__gruop">
-                <textarea name="" id="" cols="30" rows="12" placeholder="Aks a Question..."></textarea>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="fom__gruop">
+                <input type="email" placeholder="Email Address" />
+              </div>
+              <div class="fom__gruop">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Aks a Question..."
+                ></textarea>
               </div>
               <div class="fom__gruop">
                 <button type="submit">SUBMIT</button>
@@ -410,17 +422,19 @@
     <footer>
       <div class="container footer__container">
         <div class="footer__text">
-          <p>&#169 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED</p>
+          <p>&#169; 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED</p>
         </div>
         <div class="footer__icon">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
-          
         </div>
       </div>
     </footer>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
     <!-- jquery -->
     <script
       src="https://code.jquery.com/jquery-1.12.4.js"
@@ -458,6 +472,12 @@
     <!-- custom count up  -->
     <script>
       $(".counter").countUp();
+    </script>
+    <script src="./back-to-top-master/assets/js/util.js"></script>
+    <script src="./back-to-top-master/assets/js/main.js"></script>
+    <!-- custom backtop -->
+    <script>
+      (offset = 300), (offsetOpacity = 1200), (scrollDuration = 700);
     </script>
   </body>
 </html>
